@@ -4,7 +4,7 @@
 <suite name="softwaretestingmaterial">
  <test name="testngTest">
  <classes>
- <class name="testcases.sample"/>
+ <class name="testcases.TC_PulseLogin"/>
  </classes>
  </test>
 </suite>
