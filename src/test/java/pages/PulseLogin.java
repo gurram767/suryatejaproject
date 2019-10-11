@@ -18,12 +18,15 @@ public class PulseLogin {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		driver.get("http://183.82.125.132:8460/ords/f?p=333:LOGIN_DESKTOP::::::");
-		driver.manage().window().maximize();
+				driver.manage().window().maximize();
+		System.out.println("Browser lanuched");
 		Thread.sleep(5000);
 		driver.findElement(username).sendKeys("stgurram");
 		driver.findElement(password).sendKeys("pulse456");
 		driver.findElement(loginbutton).click();
+		System.out.println("Login button clicked");
 		Thread.sleep(10000);
+		System.out.println("Page Verified");
 		driver.close();
 			
 		}
